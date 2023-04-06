@@ -1,0 +1,27 @@
+div{
+    height:100px;
+    width:200px;
+    margin:10px;
+    margin-left:250px;
+    background-color: aquamarine;
+    border: 1px solid blueviolet;
+}
+.translated{
+    transform:perspective(60px) translateZ(6px);
+    /* transform:perspective(distance of screen from eyes) translateZ(distance of body inside div from screen); */
+}
+.scaled1{
+    transform: perspective(100px) scaleZ(1) rotateX(45deg);
+}
+.scaled2{
+    transform: perspective(100px) scaleZ(2) rotateX(45deg);
+}
+.scaled3{
+    transform: rotateZ(45deg);
+}
+.scaled4{
+    transform: perspective(100px) scaleZ(1.5) rotateX(45deg) rotateY(30deg);
+}
+.scaled5{
+    transform: perspective(100px) scaleZ(1.5) rotateY(45deg);
+}

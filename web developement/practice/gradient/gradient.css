@@ -1,0 +1,73 @@
+#a {
+    height:100px;
+    width:200px;
+    margin:10px;
+    border:1px solid black;
+    /* default --> to bottom */
+    background-image:linear-gradient(orange,lime);
+}
+#b {
+    height:100px;
+    width:200px;
+    margin:10px;
+    border:1px solid black;
+    background-image:linear-gradient(to right,orange,lime);
+}
+#c {
+    height:100px;
+    width:200px;
+    margin:10px;
+    border:1px solid black;
+    background-image:linear-gradient(to top,rgba(0,0,255,0.5),rgba(0,255,0,0.8));
+    /* here color(red,green,blue,opacity) where opacity == transparency */
+}
+#d {
+    height:100px;
+    width:200px;
+    margin:10px;
+    border:1px solid black;
+    background-image:linear-gradient(to bottom right,orange,lime,yellow);
+}
+#e {
+    height:100px;
+    width:200px;
+    margin:10px;
+    border:1px solid black;
+    background-image:linear-gradient(30deg,orange,lime);
+    /* 30 degrees */
+}
+#f {
+    height:100px;
+    width:200px;
+    margin:10px;
+    border:1px solid black;
+    background-image:radial-gradient(orange,lime);
+}
+#g {
+    height:200px;
+    width:200px;
+    margin:10px;
+    border:1px solid black;
+    background-image:radial-gradient(orange,lime,yellow);
+}
+#h {
+    height:100px;
+    width:200px;
+    margin:10px;
+    border:1px solid black;
+    background-image:radial-gradient(circle,orange,lime);
+}
+#i {
+    height:100px;
+    width:200px;
+    margin:10px;
+    border:1px solid black;
+    background-image:radial-gradient(orange 10%,lime 20%,red 50%);
+}
+#j {
+    height:200px;
+    width:200px;
+    margin:10px;
+    border:1px solid black;
+    background-image:conic-gradient(red, orange, yellow, green, blue);
+}

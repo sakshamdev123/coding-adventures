@@ -1,0 +1,27 @@
+.box{
+    height: 100px;
+    width: 200px;
+    margin: 20px;
+    border: 2px solid black;
+}
+#a{
+    overflow:scroll;
+}
+#b{
+    overflow:hidden;
+}
+#c{
+    overflow:auto;
+}
+#d{
+    max-height: 100px;
+    width: 200px;
+    margin: 20px;
+    border: 2px solid black;
+}
+#e{
+    min-height: 100px;
+    width: 200px;
+    margin: 20px;
+    border: 2px solid black;
+}

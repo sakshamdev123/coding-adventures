@@ -1,0 +1,56 @@
+*/*universal selector*/{
+    box-sizing: border-box;/*it reduces dimension of content and total dimention of the block remains same*/
+}
+.container{
+    height: 100px;
+    width: 500px;
+    display: flex;
+    flex-direction: row-reverse;  /* flex-direction: row; is default */
+    flex-wrap:wrap;  
+    /* keeps width/height intact if device width is smaller than flex items then it will not reduce the container size if size of divice is less than each child box then it will move child box down without changing its width */
+    /* flex-wrap: wrap-reverse; it will move next child box up rather than lower */
+    /* flex-flow: row(flex-direction) wrap-reverse(flex-wrap); flex flow is used to use flex direction and flex flow at the same time */
+    border: 2px solid blue;
+    justify-content: space-evenly;
+    /* justify content works on horizontal/main axis  */
+    /* justify-content: center; is used to make child items come in center of main axis  */
+    /* justify-content: space-between; is used to make equal spaces between child items  */
+    /* justify-content: space-around; is used to make equal spaces between child items and space between child and parent container  */
+    /* justify-content: space-around; is used to make equal spaces between child items and equal space between child and parent container  */
+    /* justify-content: flex-start; is used to place child items at the start of main container  */
+    /* justify-content: flex-end; is used to place child items at the end of main container  */
+    /* align items works on the vertical/cross axis  */
+    align-items: center;
+    /* it is used to make child items come in center of cross axis */
+    /* align-items: stretch; is default value. it is used to stretch the child item to parent container length */
+    /* align-items: baseline; is used to make baseline of child items same  */
+    /* gap: 10px; it is used to make gaps between child containers  */
+    /* row-gap: 5px; */
+    /* column-gap: 3px; */
+    /* for making child items come in center we use both justify-content: center; and align-items:center; at the same time  */
+    align-content: flex-start;
+    /* it is used to handle row created by child container  */
+    /* align-content: flex-end; it makes rows of child container move to bottom  */
+    /* align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly; */
+}
+.box{
+    width:50px;
+    border: 1px solid green;
+}
+#box1{
+    order:1;/*default order is 0 for all*/
+    flex-grow: 1;/* helps to take full width of container. default value is 0 for all*/
+    flex-shrink: 3;/*helps to deffine shrinking speed with decrease of container width. default value is 1. can't work with flex-wrap:wrap;*/
+    flex-basis: 100px;/*normally it works same as width but in case of content overflow box1 size will increase and shows whole content unlike width where content hides in case of overflow*/
+    align-self: flex-end;
+}
+#box2{
+    flex: 7 1 2 80px;/*flex is a shorthand notation as flex: order flex-grow flex-shrink flex-basis;*/
+    align-self: center;/*it helps in aligning an indivisual container*/
+}
+#box3{
+    flex-basis: 50%;/*it aquires 50% width of the parent container*/
+}

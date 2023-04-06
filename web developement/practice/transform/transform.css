@@ -1,0 +1,43 @@
+.sak{
+    background-color:yellowgreen;
+    transform:translate(50px,10px);
+    /* transform:translate(horizontal position,vertical position); */
+}
+/* it can be also written as follows */
+#hai{
+    background-color: gold;
+    transform: translateY(500px);
+    /* it works in either horizontal or vertical */
+}
+#hi{
+    background-color: gray;
+    transform: translateX(100px);
+}
+#i{
+    background-color: lime;
+    transform: rotate(-30deg);
+}
+#h{
+    background-color: skyblue;
+    margin:400px;
+    transform: scale(2,3.5);
+    /* transform: scale(horizontal scale,vertical scale); */
+    /* similarly scaleX() and scaleY() works */
+}
+#j{
+    background-color: pink;
+    width:200px;
+    transform:skew(45deg);
+    /* it tilts it */
+    /* similarly skewX() and skewY() works */
+}
+#k{
+    background-color: burlywood;
+    margin:10px;
+    color: black;
+    /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+    /* transform:matrix(2,0.5,-0.3,1.5,70,20); */
+    transform: matrix(1, 2, -1, 1, 80, 80);
+    width: 4000px;
+    
+}
